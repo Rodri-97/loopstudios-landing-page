@@ -15,11 +15,16 @@
     align-items: center;
 }
 
+* {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 4fr 9fr 1fr;
+    grid-template-rows: 3fr 10fr 1fr;
 
     .body-element {
         padding-left: 100px;
