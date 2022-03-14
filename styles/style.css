@@ -76,4 +76,8 @@ body header .immersive-experiences {
   font-family: "Josefin Sans";
   font-weight: 300;
 }
+
+body main {
+  background-color: red;
+}
 /*# sourceMappingURL=style.css.map */
