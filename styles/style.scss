@@ -1,3 +1,18 @@
-body {
-    background: red;
+@font-face {
+    font-family: "Alata";
+    src: url("../fonts/Alata/Alata-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 4fr 9fr 1fr;
+}
+
+@import "sass-components/header";

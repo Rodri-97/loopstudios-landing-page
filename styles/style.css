@@ -1,4 +1,73 @@
+@font-face {
+  font-family: "Alata";
+  src: url("../fonts/Alata/Alata-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+}
+
 body {
-  background: red;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr 9fr 1fr;
+      grid-template-rows: 4fr 9fr 1fr;
+}
+
+header {
+  background: url("../images/desktop/image-hero.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 50px 100px 100px 200px;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 5fr;
+      grid-template-rows: 1fr 5fr;
+  row-gap: 100px;
+}
+
+header .nav, header .immersive-experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav {
+  gap: 20px;
+}
+
+header .nav div {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header .nav div:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+header .immersive-experiences {
+  border: 3px solid white;
+  font-size: 50px;
+  padding: 30px 10px 20px 30px;
+  font-family: "Josefin Sans";
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
