@@ -22,7 +22,7 @@ body .body-element {
   padding-right: 100px;
 }
 
-header {
+body header {
   background: url("../images/desktop/image-hero.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ header {
   row-gap: 100px;
 }
 
-header .nav, header .immersive-experiences {
+body header .nav, body header .immersive-experiences {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,22 +54,22 @@ header .nav, header .immersive-experiences {
           align-items: center;
 }
 
-header .nav {
+body header .nav {
   gap: 20px;
 }
 
-header .nav div {
+body header .nav div {
   padding: 10px;
   border-radius: 10px;
 }
 
-header .nav div:hover {
+body header .nav div:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
 
-header .immersive-experiences {
+body header .immersive-experiences {
   border: 3px solid white;
   font-size: 50px;
   padding: 30px 10px 20px 30px;

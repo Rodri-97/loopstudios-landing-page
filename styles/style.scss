@@ -8,6 +8,13 @@
     src: url("../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
 }
 
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -18,6 +25,6 @@ body {
         padding-left: 100px;
         padding-right: 100px;
     }
-}
 
-@import "sass-components/header";
+    @import "sass-components/header";
+}
