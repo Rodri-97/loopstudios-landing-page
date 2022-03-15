@@ -75,7 +75,6 @@ body header .immersive-experiences {
 }
 
 body main {
-  border: 2px solid black;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 2fr;
@@ -222,5 +221,9 @@ body main .creations-container .grid-container .grid-item .image-description {
   font-size: 35px;
   padding-left: 30px;
   padding-bottom: 30px;
+}
+
+body footer {
+  border: 2px solid red;
 }
 /*# sourceMappingURL=style.css.map */
