@@ -58,7 +58,7 @@ body header .nav {
 }
 
 body header .nav div {
-  padding: 5px;
+  padding-bottom: 5px;
   border-bottom: 3px solid transparent;
 }
 
