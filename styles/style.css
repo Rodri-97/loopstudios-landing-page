@@ -125,8 +125,6 @@ body main .interactive-container .text p {
 }
 
 body main .creations-container {
-  border: 2px solid red;
-  padding: 10px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title button" "gridc gridc";
@@ -169,11 +167,21 @@ body main .creations-container .button-container {
 
 body main .creations-container .button-container button {
   cursor: pointer;
+  border: 2px solid #646464;
+  color: #646464;
+  background-color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 8px 25px;
+}
+
+body main .creations-container .button-container button:hover {
+  color: white;
+  background-color: #646464;
 }
 
 body main .creations-container .grid-container {
-  border: 2px solid green;
-  padding: 10px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -188,7 +196,6 @@ body main .creations-container .grid-container {
 }
 
 body main .creations-container .grid-container .grid-item {
-  border: 2px solid orange;
   display: -ms-grid;
   display: grid;
 }

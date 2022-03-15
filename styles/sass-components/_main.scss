@@ -1,3 +1,5 @@
+$specialGray: rgb(100, 100, 100);
+
 main {
     border: 2px solid black;
     display: grid;
@@ -11,7 +13,7 @@ main {
 
     h2 {
         font-size: 40px;
-        color: rgb(100, 100, 100);
+        color: $specialGray;
     }
 
     .interactive-container {
@@ -37,9 +39,6 @@ main {
     }
 
     .creations-container {
-        border: 2px solid red;
-        padding: 10px;
-
         display: grid;
         grid-template-areas: 
         "title button"
@@ -63,13 +62,21 @@ main {
 
             button {
                 cursor: pointer;
+                border: 2px solid $specialGray;
+                color: $specialGray;
+                background-color: white;
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding: 8px 25px;
+                &:hover {
+                    color: white;
+                    background-color: $specialGray;
+                }
             }
         }
 
         .grid-container {
-            border: 2px solid green;
-            padding: 10px;
-
             grid-area: gridc;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,7 +84,6 @@ main {
             gap: 20px;
 
             .grid-item {
-                border: 2px solid orange;
                 display: grid;
 
                 .image {
