@@ -18,12 +18,11 @@ header {
         gap: 20px;
 
         div {
-            padding: 10px;
-            border-radius: 10px;
+            padding: 5px;
+            border-bottom: 3px solid transparent;
 
             &:hover {
-                background-color: white;
-                color: black;
+                border-bottom-color: white;
                 cursor: pointer;
             }
         }

@@ -1,3 +1,45 @@
 footer {
-    border: 2px solid red;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .footer-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-logos, .copyright {
+        justify-content: end;
+    }
+
+    .footer-logos {
+        gap: 15px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        div {
+            cursor: pointer;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom-color: white;
+            }
+        }
+    }
+
+    .copyright {
+        color: gray;
+    }
 }

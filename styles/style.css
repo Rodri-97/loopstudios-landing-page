@@ -58,13 +58,12 @@ body header .nav {
 }
 
 body header .nav div {
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
 }
 
 body header .nav div:hover {
-  background-color: white;
-  color: black;
+  border-bottom-color: white;
   cursor: pointer;
 }
 
@@ -224,6 +223,61 @@ body main .creations-container .grid-container .grid-item .image-description {
 }
 
 body footer {
-  border: 2px solid red;
+  background-color: black;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body footer .footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .footer-logos, body footer .copyright {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body footer .footer-logos {
+  gap: 15px;
+}
+
+body footer .footer-logos img {
+  cursor: pointer;
+}
+
+body footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+body footer .footer-nav div {
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+body footer .footer-nav div:hover {
+  border-bottom-color: white;
+}
+
+body footer .copyright {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */
