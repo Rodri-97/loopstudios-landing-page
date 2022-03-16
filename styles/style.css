@@ -37,6 +37,10 @@ body header {
   row-gap: 100px;
 }
 
+body header .mobile-nav {
+  display: none;
+}
+
 body header .nav, body header .immersive-experiences {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +200,10 @@ body main .creations-container .grid-container {
 body main .creations-container .grid-container .grid-item {
   display: -ms-grid;
   display: grid;
+}
+
+body main .creations-container .grid-container .grid-item .mobile-image {
+  display: none;
 }
 
 body main .creations-container .grid-container .grid-item .image {

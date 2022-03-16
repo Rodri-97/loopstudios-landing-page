@@ -85,6 +85,10 @@ main {
             .grid-item {
                 display: grid;
 
+                .mobile-image {
+                    display: none;
+                }
+
                 .image {
                     width: 100%;
                     height: 100%;

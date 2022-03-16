@@ -10,6 +10,10 @@ header {
     grid-template-rows: 1fr 5fr;
     row-gap: 100px;
 
+    .mobile-nav {
+        display: none;
+    }
+
     .nav, .immersive-experiences {
         @include flexCenter(row);
     }
