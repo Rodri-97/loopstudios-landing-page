@@ -403,7 +403,6 @@ body footer .footer-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid red;
 }
 
 body footer .logo-container {
