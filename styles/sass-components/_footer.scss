@@ -62,6 +62,7 @@ footer {
 
         .footer-nav {
             @include flexCenter(column);
+            padding: 20px 0;
         }
     }
 }
