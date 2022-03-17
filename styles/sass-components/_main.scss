@@ -88,6 +88,23 @@ main {
 
             .grid-item {
                 display: grid;
+                cursor: pointer;
+
+                .image-description:hover + .dark-overlay {
+                    background: rgba(0, 0, 0, 0.8);
+                }
+
+                .dark-overlay {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 3;
+                    position: relative;
+                    z-index: 1;
+                    background: rgba(0, 0, 0, 0.3);
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.8);
+                    }
+                }
 
                 .mobile-image {
                     display: none;
@@ -103,13 +120,14 @@ main {
                 .image-description {
                     grid-column: 1 / 2;
                     grid-row: 2 / 3;
-                    color: white;
+                    color: rgba(255, 255, 255, 0.7);
                     font-size: 35px;
-
                     padding-left: 30px;
                     padding-bottom: 30px;
                     display: flex;
                     align-items: end;
+                    position: relative;
+                    z-index: 2;
                 }
             }
         }
