@@ -1,4 +1,4 @@
-$specialGray: rgb(100, 100, 100);
+$veryDarkGray: hsl(0, 0%, 41%);
 
 main {
     display: grid;
@@ -13,7 +13,10 @@ main {
 
     h2 {
         font-size: 40px;
-        color: $specialGray;
+        color: black;
+        font-family: "Josefin Sans Light";
+        font-weight: 300;
+        opacity: 0.8;
     }
 
     .interactive-container {
@@ -62,8 +65,8 @@ main {
 
             button {
                 cursor: pointer;
-                border: 2px solid $specialGray;
-                color: $specialGray;
+                border: 2px solid $veryDarkGray;
+                color: $veryDarkGray;
                 background-color: white;
                 font-size: 12px;
                 font-weight: bold;
@@ -71,7 +74,7 @@ main {
                 padding: 8px 25px;
                 &:hover {
                     color: white;
-                    background-color: $specialGray;
+                    background-color: $veryDarkGray;
                 }
             }
         }
@@ -102,6 +105,7 @@ main {
                     grid-row: 2 / 3;
                     color: white;
                     font-size: 35px;
+
                     padding-left: 30px;
                     padding-bottom: 30px;
                     display: flex;
