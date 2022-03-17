@@ -27,6 +27,7 @@ footer {
     .footer-nav {
         display: flex;
         flex-direction: row;
+        justify-content: start;
         gap: 20px;
 
         div {
@@ -42,5 +43,15 @@ footer {
 
     .copyright {
         color: gray;
+    }
+}
+
+@media all and (max-width: 800px) {
+    footer {
+        @include flexCenter(column);
+
+        .footer-nav {
+            @include flexCenter(column);
+        }
     }
 }
