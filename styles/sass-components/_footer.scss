@@ -3,8 +3,9 @@ footer {
     color: white;
     display: grid;
     grid-template-columns: auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    row-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     .footer-item {
         display: flex;

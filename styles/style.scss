@@ -17,8 +17,8 @@
 body {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-rows: 3fr 10fr 1fr;
+    display: flex;
+    flex-direction: column;
 
     .body-element {
         padding-left: 100px;
@@ -28,4 +28,22 @@ body {
     @import "sass-components/header";
     @import "sass-components/main";
     @import "sass-components/footer";
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        .body-element {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    body {
+        .body-element {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
 }
