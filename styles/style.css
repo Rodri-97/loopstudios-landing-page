@@ -390,6 +390,7 @@ body footer {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+      grid-template-areas: "logo social-media" "nav copyright";
   row-gap: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -402,23 +403,36 @@ body footer .footer-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 3px solid red;
 }
 
-body footer .footer-logos, body footer .copyright {
+body footer .logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+body footer .social-media, body footer .copyright {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-body footer .footer-logos {
+body footer .social-media {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: social-media;
   gap: 15px;
 }
 
-body footer .footer-logos img {
+body footer .social-media img {
   cursor: pointer;
 }
 
 body footer .footer-nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,6 +457,9 @@ body footer .footer-nav div:hover {
 }
 
 body footer .copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: copyright;
   color: gray;
 }
 
