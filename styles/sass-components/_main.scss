@@ -109,3 +109,31 @@ main {
         }
     }
 }
+
+@media all and (max-width: 1200px) {
+    main {
+        .interactive-container {
+            display: flex;
+            flex-direction: column;
+
+            .image {
+                width: 100%;
+            }
+
+            .text {
+                padding: 30px 150px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    main {
+        .interactive-container {
+            .text {
+                padding: 30px;
+            }
+        }
+    }
+}
