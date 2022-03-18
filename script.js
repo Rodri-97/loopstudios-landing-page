@@ -1,10 +1,10 @@
 const bodyContent = document.getElementById("body-content");
-const headerClone = document.getElementById("header-clone");
+const mobileNav = document.getElementById("mobile-nav-container");
 const icons = document.querySelectorAll(".icon");
 
 icons.forEach(icon => {
     icon.addEventListener("click", () => {
         bodyContent.classList.toggle("hide");
-        headerClone.classList.toggle("show");
+        mobileNav.classList.toggle("show");
     });
 });

@@ -109,12 +109,12 @@ body header .immersive-experiences {
   grid-column: 1 / 2;
 }
 
-body #header-clone {
+body #mobile-nav-container {
   display: none;
 }
 
 @media all and (max-width: 700px) {
-  body #header-clone.show {
+  body #mobile-nav-container.show {
     height: 100vh;
     background: black;
     display: -ms-grid;
@@ -124,12 +124,12 @@ body #header-clone {
         grid-template-rows: auto 1fr;
     padding-top: 50px;
   }
-  body #header-clone.show .logo-container {
+  body #mobile-nav-container.show .logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logo;
   }
-  body #header-clone.show .close {
+  body #mobile-nav-container.show .close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,7 +144,7 @@ body #header-clone {
     grid-area: close;
     cursor: pointer;
   }
-  body #header-clone.show .nav {
+  body #mobile-nav-container.show .nav {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: nav;
@@ -164,7 +164,7 @@ body #header-clone {
     gap: 30px;
     margin-top: 70px;
   }
-  body #header-clone.show .nav div {
+  body #mobile-nav-container.show .nav div {
     color: white;
     font-size: 30px;
     border-bottom: 5px solid transparent;
@@ -183,7 +183,7 @@ body #header-clone {
             align-items: center;
     cursor: pointer;
   }
-  body #header-clone.show .nav div:hover {
+  body #mobile-nav-container.show .nav div:hover {
     border-bottom-color: white;
   }
   body header .logo-nav-container .nav {
@@ -603,7 +603,7 @@ body footer .copyright {
 }
 
 @media all and (max-width: 1000px) {
-  body .body-element, body #header-clone {
+  body .body-element, body #mobile-nav-container {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -616,7 +616,7 @@ body footer .copyright {
 }
 
 @media all and (max-width: 600px) {
-  body .body-element, body #header-clone {
+  body .body-element, body #mobile-nav-container {
     padding-left: 30px;
     padding-right: 30px;
   }

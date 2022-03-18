@@ -38,7 +38,7 @@ body {
 
 @media all and (max-width: 1000px) {
     body {
-        .body-element, #header-clone {
+        .body-element, #mobile-nav-container {
             padding-left: 50px;
             padding-right: 50px;
         }
@@ -53,7 +53,7 @@ body {
 
 @media all and (max-width: 600px) {
     body {
-        .body-element, #header-clone {
+        .body-element, #mobile-nav-container {
             padding-left: 30px;
             padding-right: 30px;
         }
