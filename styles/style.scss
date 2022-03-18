@@ -35,18 +35,25 @@ body {
     @import "sass-components/footer";
 }
 
+
 @media all and (max-width: 1000px) {
     body {
-        .body-element {
+        .body-element, #header-clone {
             padding-left: 50px;
             padding-right: 50px;
         }
     }
 }
 
+@media all and (max-width: 700px) {    
+    #body-content.hide {
+        display: none;
+    }
+}
+
 @media all and (max-width: 600px) {
     body {
-        .body-element {
+        .body-element, #header-clone {
             padding-left: 30px;
             padding-right: 30px;
         }

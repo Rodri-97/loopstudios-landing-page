@@ -55,7 +55,7 @@ body header .logo-nav-container {
           justify-content: space-between;
 }
 
-body header .logo-nav-container .hamburger-menu {
+body header .logo-nav-container .hamburger {
   display: none;
 }
 
@@ -109,17 +109,97 @@ body header .immersive-experiences {
   grid-column: 1 / 2;
 }
 
+body #header-clone {
+  display: none;
+}
+
 @media all and (max-width: 700px) {
-  body header .logo-nav-container .nav {
-    display: none;
+  body #header-clone.show {
+    height: 100vh;
+    background: black;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo close" "nav nav";
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    padding-top: 50px;
   }
-  body header .logo-nav-container .hamburger-menu {
+  body #header-clone.show .logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  body #header-clone.show .close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: close;
+    cursor: pointer;
+  }
+  body #header-clone.show .nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin-top: 70px;
+  }
+  body #header-clone.show .nav div {
+    color: white;
+    font-size: 30px;
+    border-bottom: 5px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  body #header-clone.show .nav div:hover {
+    border-bottom-color: white;
+  }
+  body header .logo-nav-container .nav {
+    display: none;
+  }
+  body header .logo-nav-container .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -523,14 +603,20 @@ body footer .copyright {
 }
 
 @media all and (max-width: 1000px) {
-  body .body-element {
+  body .body-element, body #header-clone {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
+@media all and (max-width: 700px) {
+  #body-content.hide {
+    display: none;
+  }
+}
+
 @media all and (max-width: 600px) {
-  body .body-element {
+  body .body-element, body #header-clone {
     padding-left: 30px;
     padding-right: 30px;
   }
