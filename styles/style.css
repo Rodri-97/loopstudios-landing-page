@@ -55,7 +55,7 @@ body header .logo-nav-container {
           justify-content: space-between;
 }
 
-body header .logo-nav-container .mobile-nav {
+body header .logo-nav-container .hamburger-menu {
   display: none;
 }
 
@@ -113,7 +113,7 @@ body header .immersive-experiences {
   body header .logo-nav-container .nav {
     display: none;
   }
-  body header .logo-nav-container .mobile-nav {
+  body header .logo-nav-container .hamburger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,6 +123,7 @@ body header .immersive-experiences {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
   }
   body header .immersive-experiences {
     -ms-grid-column: 1;

@@ -14,7 +14,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        .mobile-nav {
+        .hamburger-menu {
             display: none;
         }
 
@@ -52,10 +52,11 @@ header {
                 display: none;
             }
     
-            .mobile-nav {
+            .hamburger-menu {
                 display: flex;
                 justify-content: end;
                 align-items: center;
+                cursor: pointer;
             }
         }
 
