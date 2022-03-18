@@ -155,6 +155,12 @@ main {
         .creations-container {
             @include flexCenter(column);
 
+            .title-container {
+                .title {
+                    text-align: center;
+                }
+            }
+
             .grid-container {
                 @include flexCenter(column);
 

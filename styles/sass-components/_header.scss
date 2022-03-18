@@ -109,6 +109,15 @@ header {
 
         .immersive-experiences {
             grid-column: 1 / 3;
+            font-size: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    header {
+        .immersive-experiences {
+            font-size: 25px;
         }
     }
 }
