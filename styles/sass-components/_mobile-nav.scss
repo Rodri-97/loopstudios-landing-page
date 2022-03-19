@@ -1,0 +1,50 @@
+#mobile-nav-container {
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    #mobile-nav-container.show {
+        height: 100vh;
+        background: black;
+        display: grid;
+        grid-template-areas:
+            "logo close"
+            "nav nav";
+        grid-template-rows: auto 1fr;
+        padding-top: 50px;
+
+        .logo-container {
+            grid-area: logo;
+        }
+
+        .close {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            grid-area: close;
+            cursor: pointer;
+        }
+
+        .nav {
+            grid-area: nav;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 30px;
+            margin-top: 70px;
+
+            div {
+                color: white;
+                font-size: 30px;
+                border-bottom: 5px solid transparent;
+                @include flexCenter(row);
+                cursor: pointer;
+
+                &:hover {
+                    border-bottom-color: white;
+                }
+            }
+        }
+    }
+}

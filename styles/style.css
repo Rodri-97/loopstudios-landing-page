@@ -109,83 +109,7 @@ body header .immersive-experiences {
   grid-column: 1 / 2;
 }
 
-body #mobile-nav-container {
-  display: none;
-}
-
 @media all and (max-width: 700px) {
-  body #mobile-nav-container.show {
-    height: 100vh;
-    background: black;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "logo close" "nav nav";
-    -ms-grid-rows: auto 1fr;
-        grid-template-rows: auto 1fr;
-    padding-top: 50px;
-  }
-  body #mobile-nav-container.show .logo-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: logo;
-  }
-  body #mobile-nav-container.show .close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: close;
-    cursor: pointer;
-  }
-  body #mobile-nav-container.show .nav {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: nav;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    margin-top: 70px;
-  }
-  body #mobile-nav-container.show .nav div {
-    color: white;
-    font-size: 30px;
-    border-bottom: 5px solid transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-  }
-  body #mobile-nav-container.show .nav div:hover {
-    border-bottom-color: white;
-  }
   body header .logo-nav-container .nav {
     display: none;
   }
@@ -609,6 +533,86 @@ body footer .copyright {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 0;
+  }
+}
+
+body #mobile-nav-container {
+  display: none;
+}
+
+@media all and (max-width: 700px) {
+  body #mobile-nav-container.show {
+    height: 100vh;
+    background: black;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo close" "nav nav";
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    padding-top: 50px;
+  }
+  body #mobile-nav-container.show .logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  body #mobile-nav-container.show .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: close;
+    cursor: pointer;
+  }
+  body #mobile-nav-container.show .nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin-top: 70px;
+  }
+  body #mobile-nav-container.show .nav div {
+    color: white;
+    font-size: 30px;
+    border-bottom: 5px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  body #mobile-nav-container.show .nav div:hover {
+    border-bottom-color: white;
   }
 }
 
