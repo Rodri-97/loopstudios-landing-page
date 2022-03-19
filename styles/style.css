@@ -137,7 +137,7 @@ body header .immersive-experiences {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 400px) {
   body header .immersive-experiences {
     font-size: 25px;
   }
